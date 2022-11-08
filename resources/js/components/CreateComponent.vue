@@ -12,7 +12,7 @@
     <div class="mb-3">
         <input @click.prevent="addPerson" class="btn btn-primary" value = "Добавить">
     </div>
-    <some-component></some-component>
+    <some-component :obj ="obj"></some-component>
    </div>
    
     </template>
@@ -31,6 +31,11 @@
                 name : null,
                 age : null,
                 job : null,
+                obj: {
+                    color:'yellow',
+                    number:'20',
+                    isPublished:true
+                }
             }
         },
 
