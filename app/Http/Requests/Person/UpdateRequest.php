@@ -24,9 +24,9 @@ class UpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=> 'required',
-            'age'=> 'required',
-            'job'=> 'required',
+            'name'=> 'required|string',
+            'age'=> 'required|integer',
+            'job'=> 'required|string',
         ];
     }
 }
